@@ -50,8 +50,6 @@ for a in glob.iglob(folder,recursive=True):
         if b.lower().endswith(('.jpg','.png','.tif','.tiff','.gif')):
             countInner += 1
 
-        print(countInner, "", countOuter)
-
         if countInner <= countOuter:
             continue
 
@@ -83,7 +81,7 @@ for a in glob.iglob(folder,recursive=True):
     if a.lower().endswith(('.jpg','.png','.tif','.tiff','.gif')):
         countOuter += 1
 
-zippedList =  list(zip(listOfTitles1,listOfTitles2, listOfSimilarities))
+zippedList =  list(zip(listOfTitles1, listOfTitles2, listOfSimilarities))
 
 print(zippedList)
 
